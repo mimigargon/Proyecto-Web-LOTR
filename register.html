@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro y Log in</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>EL SEÑOR DE LOS ANILLOS</h1>
+          </header>
+      
+          <nav>
+            <a href="index.html">Inicio</a>
+            <a href="curiosidades.html">Curiosidades</a>
+            <a href="razas.html">Razas</a>
+            <a href="tolkien.html">J.R.R. Tolkien</a>
+          </nav>
+
+          <main>
+            <h2>REGISTRO</h2>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Datos de usuario</legend>
+
+                <label for="firstname">
+                <p>Nombre y apellidos</p>
+                <input name="firstname" type="text" placeholder="Introduzca su nombre" pattern="[A-Za-z0-9]{5,40}" title="Letras y números. Tamaño mínimo: 6. Tamaño máximo: 40" required>
+              </label>
+              
+              <label for="lastname">
+                <input name="lastname" type="text" placeholder="Introduzca sus apellidos" pattern="[A-Za-z0-9]{5,40}" title="Letras y números. Tamaño mínimo: 6. Tamaño máximo: 40" required>
+              </label>
+
+              <label for="age">
+                <p>Edad</p>
+                <input name="age" type="number" placeholder="Su edad" min="14" max="99" required>
+              </label>
+              
+              <label for="birthdate">
+                <p>Fecha de nacimiento</p>
+                <input name="birthdate" type="date" placeholder="Introduzca su fecha de nacimiento" required>
+              </label>
+                
+              <label for="username">
+                <p>Nombre de usuario</p>
+                <input name="username" type="text" placeholder="Introduzca su nombre de usuario" pattern="[A-Za-z0-9]{5,40}" title="Letras y números. Tamaño mínimo: 6. Tamaño máximo: 40" required>
+              </label>
+
+              <label for="email">
+                <p>Email</p>
+                <input name="email" type="email" placeholder="Introduzca su email" required>
+              </label>
+
+              <label for="password">
+                <p>Contraseña</p>
+                <input name="password" type="password" placeholder="Introduzca una contraseña" pattern="[A-Za-z0-9]{5,40}" title="Letras y números. Tamaño mínimo: 6. Tamaño máximo: 40" required>
+              </label>
+              </fieldset>
+
+              <div>
+                <button type="submit">Enviar</button>
+              </div>
+              
+              <div>
+                <button type="reset">Borrar formulario</button>
+              </div>
+
+            </form>
+            
+            <h2>CONTECTARSE</h2>
+            <form action="" method="post">
+              <fieldset>
+                <label for="name">
+                  <p>Usuario</p>
+                  <input name="name" type="text" placeholder="Introduzca su nombre de usuario" pattern="[A-Za-z0-9]{5,40}" title="Letras y números. Tamaño mínimo: 6. Tamaño máximo: 40" required>
+                </label>
+
+                <label for="contraseña">
+                  <p>Contraseña</p>
+                  <input name="contraseña" type="password" placeholder="Introduzca su contraseña" pattern="[A-Za-z0-9]{5,40}" title="Letras y números. Tamaño mínimo: 6. Tamaño máximo: 40" required>
+                </label>
+              </fieldset>
+
+              <div>
+                <button type="submit">Enviar</button>
+              </div>
+
+            </form>
+          </main>
+          
+    </body>
+</html>
